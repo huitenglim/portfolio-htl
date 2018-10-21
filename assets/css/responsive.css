@@ -1,0 +1,180 @@
+@media screen and (max-width: 1300px) {
+
+}
+@media screen and (max-width: 1200px) {
+    #home-section img {
+        width: 100%;
+    }
+    #home-section .home-title {
+        font-size: 2.7rem;
+        margin-top: 12rem;
+    }
+    #home-section .home-subtitle {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .header-nav .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header-nav .navbar-brand {
+        margin-left: 2rem;
+    }
+    .header-nav .nav {
+        margin-right: 0.5rem;
+    }
+    #home-section img {
+        width: 450px;
+        margin-top: 2rem;
+    }
+    #home-section .home-title {
+        text-align: center;
+    }
+    #home-section .home-subtitle {
+        text-align: center;
+    }
+    .about-content .about-content-section ul:nth-of-type(3) {
+        margin-bottom: 0
+    }
+    .about-content .about-content-section:last-child ul:nth-of-type(2) {
+        margin-bottom: 0
+    }
+    .about-content .about-content-section .about-subtitle,
+    .about-content .about-content-section .about-paragraph {
+        text-align: center;
+    }
+    #about-img-one {
+        width: 230px;
+        margin: 0 auto 5rem auto !important;
+    }
+    #about-img-two,
+    #about-img-three {
+        width: 300px;
+    }
+    .startup-content .overlay h1 {
+        font-size: 1.75rem;
+    }
+    .startup-content .overlay p {
+        width: 100%;
+    }
+    .startup-content .overlay a .btn-link-fx {
+        font-size: 1.2rem;
+    }
+    .startup-content .overlay .section-squigly-divider {
+        height: 30px;
+    }
+    .footer-left {
+        float: none;
+    }
+    .footer-left img {
+        width: 40px;
+        margin: 0 auto 1rem auto;
+    }
+    .copyright-text {
+        text-align: center;
+    }
+    .copyright-text > a {
+        margin-top: 1rem;
+    }
+    .footer-right {
+        float: none;
+    }
+    .footer-social-widget ul {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #mobile-nav {
+        margin-top: 0.5rem;
+    }
+    .header-nav .navbar-toggler {
+        margin-right: 2rem;
+    }
+    .header-nav .navbar-toggler > i {
+        font-size: 2rem;
+        color: #40404C;
+    }
+    .header-nav .nav {
+        margin-top: 0;
+        margin-right: 0;
+        padding-bottom: 1rem;
+        background-color: #fff
+    }
+    .header-nav .nav-link {
+        padding-top: 1rem;
+    }
+    .header-nav .nav-link-fx:before {
+        height: 2px;
+    }
+    .header-nav .nav-link-fx:after {
+        top: 1rem;
+    }
+    #home-section,
+    #about-section {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    #home-section .home-title {
+        margin-top: 16rem;
+    }
+    .startup-content .card .card-img .overlay {
+        padding: 1.5rem;
+    }
+    .startup-content .overlay h1 {
+        display: none;
+    }
+    .startup-content .overlay p {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .startup-content .overlay a {
+        margin-top: 0;
+    }
+    .startup-content .overlay .section-squigly-divider {
+        background-size: 300px auto;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .startup-content .overlay p,
+    .startup-content .overlay .section-squigly-divider {
+        display: none;
+    }
+    .startup-content .overlay a .btn-link-fx {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    #home-section .home-subtitle > span {
+        display: block;
+        line-height: 1.5;
+    }
+    #typed {
+        border-bottom: 3px solid #40404C;
+    }
+}
+@media screen and (max-width: 385px) {
+    .header-nav .nav-item {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .header-nav .nav-link-fx:before {
+        visibility: hidden;
+    }
+    .section-hashtags-divider {
+        background-size: 140px auto;
+    }
+    #home-section .home-title {
+        margin-top: 10rem;
+    }
+    .about-content .about-content-section ul {
+        padding-left: 0;
+    }
+    .about-content .about-content-section ul li > .hashtag {
+        width: 15px;
+    }
+}

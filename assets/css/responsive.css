@@ -1,5 +1,10 @@
 @media screen and (max-width: 1300px) {
-
+    #melontoon-modal-container .bg-img,
+    #webnic-modal-container .bg-img,
+    #etisalat-modal-container .bg-img {
+        background-position: center 0;
+        height: 100vh;
+    }
 }
 @media screen and (max-width: 1200px) {
     #home-section img {
@@ -113,7 +118,10 @@
         top: 1rem;
     }
     #home-section,
-    #about-section {
+    #about-section,
+    #work-section,
+    #contact-section,
+    #contact-form-section {
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -137,6 +145,34 @@
         background-size: 300px auto;
         height: 20px;
     }
+    #startup-modal-container .modal-content .text-container,
+    #melontoon-modal-container .modal-content .text-container,
+    #webnic-modal-container .modal-content .text-container,
+    #etisalat-modal-container .modal-content .text-container {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #startup-modal-container .modal-content ul,
+    #startup-modal-container .modal-content h5,
+    #melontoon-modal-container .modal-content ul,
+    #melontoon-modal-container .modal-content h5,
+    #webnic-modal-container .modal-content ul,
+    #webnic-modal-container .modal-content h5,
+    #etisalat-modal-container .modal-content ul,
+    #etisalat-modal-container .modal-content h5 {
+        text-align: center;
+    }
+    #startup-modal-container .modal-content .img-thumb,
+    #melontoon-modal-container .modal-content .img-thumb,
+    #webnic-modal-container .modal-content .img-thumb,
+    #etisalat-modal-container .modal-content .img-thumb {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #contact-form-section form {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 576px) {
     .startup-content .overlay p,
@@ -154,6 +190,10 @@
     }
     #typed {
         border-bottom: 3px solid #40404C;
+    }
+    footer {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 @media screen and (max-width: 385px) {

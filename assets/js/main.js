@@ -24,6 +24,49 @@
             $("#mobile-nav").addClass('show');
         }
     });
+
+    // Custom Modal
+    $('.btn-modal').click(function(){
+        let buttonId = $(this).attr('id');
+
+        if($('#melontoon-modal-container')) {
+            $('#melontoon-modal-container').removeAttr('class').addClass(buttonId);
+        }
+
+        if($('#webnic-modal-container')) {
+            $('#webnic-modal-container').removeAttr('class').addClass(buttonId);
+        }
+
+        if($('#etisalat-modal-container')) {
+            $('#etisalat-modal-container').removeAttr('class').addClass(buttonId);
+        }
+
+        if($('#startup-modal-container')) {
+            $('#startup-modal-container').removeAttr('class').addClass(buttonId);
+        }
+
+        $('body').addClass('modal-active');
+    });
+
+    $('#melontoon-close-modal').click(function(){
+        $('#melontoon-modal-container').addClass('out');
+        $('body').removeClass('modal-active');
+    });
+
+    $('#webnic-close-modal').click(function(){
+        $('#webnic-modal-container').addClass('out');
+        $('body').removeClass('modal-active');
+    });
+
+    $('#etisalat-close-modal').click(function(){
+        $('#etisalat-modal-container').addClass('out');
+        $('body').removeClass('modal-active');
+    });
+
+    $('#startup-close-modal').click(function(){
+        $('#startup-modal-container').addClass('out');
+        $('body').removeClass('modal-active');
+    });
 })(jQuery);
 
 // Initialise typed js

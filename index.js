@@ -40,8 +40,8 @@ router.post('/sendEmail', function(req, res) {
             port: process.env.EPORT, //587
             secure: false,
             auth: {
-                user: process.env.USER, //'foodninjaapp@gmail.com',
-                pass: process.env.PASS //'Foodninja1234qweR'
+                user: process.env.USER, //'test@gmail.com',
+                pass: process.env.PASS //'yourpassword'
             },
             tls: {
                 rejectUnauthorized: false

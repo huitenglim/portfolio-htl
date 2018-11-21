@@ -18,6 +18,10 @@ app.use(bodyParser.json());
 let router = express.Router();
 app.use('/api', router);
 
+// Allow cross origin requests
+const cors = require('cors')({origin:true});
+app.use(cors);
+
 router.get('/', function(req, res) {
     res.json({ message: 'API is working!' });
 });
@@ -40,7 +44,7 @@ router.post('/sendEmail', function(req, res) {
             port: process.env.EPORT, //587
             secure: false,
             auth: {
-                user: process.env.USER, //'test@gmail.com',
+                user: process.env.USER, //'youremail@gmail.com',
                 pass: process.env.PASS //'yourpassword'
             },
             tls: {

@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huitenglim/porfolio-htl.git"
+  },
+  "author": "Hui Teng Lim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huitenglim/porfolio-htl/issues"
+  },
+  "homepage": "https://github.com/huitenglim/porfolio-htl#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.7.0"
+  }
+}

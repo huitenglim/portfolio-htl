@@ -7,6 +7,16 @@
             scrollTime: 1200,
             topOffset: -150
         });
+
+        // Initialise typed js
+        let typed = new Typed('#typed', {
+            strings: [
+                "code.",
+                "design.",
+            ],
+            typeSpeed: 120,
+            loop: true
+        });
     }
 
     // Hides mobile nav dropdown on breakpoint 375px or less
@@ -68,13 +78,3 @@
         $('body').removeClass('modal-active');
     });
 })(jQuery);
-
-// Initialise typed js
-let typed = new Typed('#typed', {
-    strings: [
-        "code.",
-        "design.",
-    ],
-    typeSpeed: 120,
-    loop: true
-});

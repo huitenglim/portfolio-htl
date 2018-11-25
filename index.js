@@ -40,12 +40,12 @@ router.post('/sendEmail', function (req, res) {
     `;
 
     var transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com', //'smtp.gmail.com'
-        port: 465, //587
+        host: process.env.mailhost, //'smtp.gmail.com'
+        port: process.env.mailport, //587
         secure: true,
         auth: {
-            user: 'foodninjaapp@gmail.com', //'youremail@gmail.com',
-            pass: 'Foodninja1234qweR' //'yourpassword'
+            user: process.env.mailuser, //'youremail@gmail.com',
+            pass: process.env.maillpassword //'yourpassword'
         },
         tls: {
             rejectUnauthorized: false

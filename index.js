@@ -1,3 +1,4 @@
+//const functions = require('firebase-functions');
 // Importing dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -39,7 +40,7 @@ router.post('/sendEmail', function (req, res) {
     `;
 
     var transporter = nodemailer.createTransport({
-        host: smtp.gmail.com, //'smtp.gmail.com'
+        host: 'smtp.gmail.com', //'smtp.gmail.com'
         port: 465, //587
         secure: true,
         auth: {
@@ -62,7 +63,8 @@ router.post('/sendEmail', function (req, res) {
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-            return console.log(error);
+            console.log(error);
+            return res.status(400).send({ code: -1, message: 'error has occur', reason: error })
         }
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
@@ -74,3 +76,5 @@ router.post('/sendEmail', function (req, res) {
 // Test port
 app.listen(port);
 console.log('Magic happens on port ' + port);
+
+// exports.api = functions.https.onRequest(app)

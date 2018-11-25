@@ -24,7 +24,7 @@ const cors = require('cors')({ origin: true });
 app.use(cors);
 
 router.get('/', function (req, res) {
-    res.json({ message: 'API is working!' });
+    res.json({ message: 'API is working! v1.2' });
 });
 
 router.post('/sendEmail', function (req, res) {

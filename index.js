@@ -41,7 +41,7 @@ router.post('/sendEmail', function(req, res) {
     let transporter = nodemailer.createTransport({
         host: process.env.HOST, //'smtp.gmail.com'
         port: process.env.EPORT, //587
-        secure: false,
+        secure: true,
         auth: {
             user: process.env.USER, //'youremail@gmail.com',
             pass: process.env.PASS //'yourpassword'

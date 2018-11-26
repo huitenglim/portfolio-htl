@@ -38,36 +38,38 @@ router.post('/sendEmail', function(req, res) {
         <p>${req.body.message}</p>
     `;
 
-    let transporter = nodemailer.createTransport({
-        host: process.env.HOST, //'smtp.gmail.com'
-        port: process.env.PORT, // 465
-        secure: true,
-        auth: {
-            user: process.env.USER, //'youremail@gmail.com'
-            pass: process.env.PASS //'yourpassword'
-        },
-        tls: {
-            rejectUnauthorized: false
-        }
-    });
+    nodemailer.createTestAccount(function(err, account) {
+        let transporter = nodemailer.createTransport({
+            host: process.env.HOST, //'smtp.gmail.com'
+            port: process.env.EPORT, //465
+            secure: true,
+            auth: {
+                user: process.env.USER, //'youremail@gmail.com',
+                pass: process.env.PASS //'yourpassword'
+            },
+            tls: {
+                rejectUnauthorized: false
+            }
+        });
 
-    let mailOptions = {
-        from: `${req.body.email} <${req.body.email}>`, // Sender address
-        to: 'huiteng1995@gmail.com', // List of receivers
-        subject: `Contact Request from ${req.body.email}`, // Subject line
-        text: '', // Plain text body
-        html: message // Html body
-    };
+        let mailOptions = {
+            from: `${process.env.USER} <${process.env.USER}>`, // Sender address
+            to: 'huiteng1995@gmail.com', // List of receivers
+            subject: `Contact Request from ${req.body.email}`, // Subject line
+            text: '', // Plain text body
+            html: message // Html body
+        };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
-            return res.status(400).send({ code: -1, message: 'Error has occurred', reason: error })
-        }
-        console.log('Message sent: %s', info.messageId);
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        transporter.sendMail(mailOptions,function(error,info) {
+            if(error){
+                console.log(error);
+                return res.status(400).send({ code: -1, message: 'Error has occurred', reason: error })
+            }
+            console.log('Message sent: %s', info.messageId);
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        res.json({ message: "sending email to " + name + " at " + email });
+            res.json({message: "sending email to " + name + " at " + email});
+        });
     });
 });
 

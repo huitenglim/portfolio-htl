@@ -21,6 +21,11 @@ app.use('/api', router);
 // Allow cross origin requests
 const cors = require('cors')({origin:true});
 app.use(cors);
+app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
 
 router.get('/', function(req, res) {
     res.json({ message: 'API is working!' });

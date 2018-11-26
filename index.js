@@ -41,8 +41,8 @@ router.post('/sendEmail', function(req, res) {
     nodemailer.createTestAccount(function(err, account) {
         let transporter = nodemailer.createTransport({
             host: process.env.HOST, //'smtp.gmail.com'
-            port: process.env.EPORT, //465
-            secure: true,
+            port: process.env.EPORT, //587
+            secure: false,
             auth: {
                 user: process.env.USER, //'youremail@gmail.com',
                 pass: process.env.PASS //'yourpassword'
@@ -53,17 +53,16 @@ router.post('/sendEmail', function(req, res) {
         });
 
         let mailOptions = {
-            from: `${process.env.USER} <${process.env.USER}>`, // Sender address
+            from: `${req.body.name} <${req.body.email}>`, // Sender address
             to: 'huiteng1995@gmail.com', // List of receivers
-            subject: `Contact Request from ${req.body.email}`, // Subject line
+            subject: 'Contact Request', // Subject line
             text: '', // Plain text body
             html: message // Html body
         };
 
         transporter.sendMail(mailOptions,function(error,info) {
             if(error){
-                console.log(error);
-                return res.status(400).send({ code: -1, message: 'Error has occurred', reason: error })
+                return console.log(error);
             }
             console.log('Message sent: %s', info.messageId);
             console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));

@@ -1142,6 +1142,25 @@ footer {
     transform: translate(-50%, -50%);
 }
 /*
+ * Core: Alertify
+ * --------------
+ */
+.ajs-content {
+    color: #40404C !important;
+}
+.ajs-button {
+    cursor: pointer;
+    margin: 1.5rem !important;
+    border: none !important;
+}
+.ajs-commands {
+    margin: -0.5rem 1rem 0 1rem !important;
+}
+.ajs-ok {
+    background-color: #40404C;
+    color: #fff;
+}
+/*
  * Core: Keyframes
  * ---------------
  */

@@ -8,8 +8,8 @@ $(function ($) {
         let action = 'Web Contact Form';
 
         if(!name || !email || !message) {
-            // alertify.alert('Please check your entries')
-            //     .setHeader('');
+            alertify.alert('Please check your entries')
+                .setHeader('');
         }
         else {
             let data = {
@@ -31,8 +31,8 @@ $(function ($) {
 
             $(this).get(0).reset();
 
-            // alertify.alert('Your message is successfully sent!')
-            //     .setHeader('');
+            alertify.alert('Your message is successfully sent!')
+                .setHeader('');
         }
     });
 });

@@ -2,21 +2,20 @@ $(function ($) {
     $('#contact-form').submit(function (e) {
         e.preventDefault();
 
-        let subject = $('#inputName')[0].value;
-        let recipient = $('#inputEmail')[0].value;
-        let htmlBody = $('#inputMessage').val().replace(/\n/g,'<br/>');
+        let name = $('#inputName')[0].value;
+        let email = $('#inputEmail')[0].value;
+        let message = $('#inputMessage').val().replace(/\n/g,'<br/>');
         let action = 'Web Contact Form';
 
-        if(!subject || !recipient || !htmlBody) {
+        if(!name || !email || !message) {
             // alertify.alert('Please check your entries')
             //     .setHeader('');
         }
         else {
-            subject = 'Message to Hui Teng by: ' + $('#inputName')[0].value;
             let data = {
-                subject: subject,
-                recipient: 'huiteng1995@gmail.com',
-                htmlBody: htmlBody,
+                name: name,
+                email: email,
+                message: message,
                 action: action
             };
 

@@ -191,6 +191,12 @@
     #typed {
         border-bottom: 3px solid #40404C;
     }
+    #melontoon-modal-container .bg-img,
+    #startup-modal-container .bg-img,
+    #webnic-modal-container .bg-img,
+    #etisalat-modal-container .bg-img {
+        display: none;
+    }
     footer {
         padding-right: 1rem;
         padding-left: 1rem;

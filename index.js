@@ -7,9 +7,6 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 8000;
 
-// Static folder
-app.use('/public', express.static(path.join(__dirname, 'public')));
-
 // Body parser middleware
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());

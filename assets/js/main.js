@@ -1,4 +1,6 @@
 (function($) {
+    var projectCloseIcon = $('.project-modal-container .nav-img-link');
+
     // Init scrollIt if body contains app class
     if($('body').is('.app')) {
         $.scrollIt({
@@ -9,7 +11,7 @@
         });
 
         // Initialise typed js
-        let typed = new Typed('#typed', {
+        var typed = new Typed('#typed', {
             strings: [
                 "code.",
                 "design.",
@@ -37,54 +39,36 @@
 
     // Custom Modal
     $('.btn-modal').click(function(){
-        let buttonId = $(this).attr('id');
+        var buttonId = $(this).attr('id'),
+            allProjectModal = $('.project-modal-container'),
+            projectModal = $('.project-modal-container' + '[aria-labelledby="' + buttonId + '"]');
 
-        if($('#melontoon-modal-container')) {
-            $('#melontoon-modal-container').removeAttr('class').addClass(buttonId);
+        if (allProjectModal.hasClass('out')) {
+           allProjectModal.removeClass('out fold-up-modal');
         }
 
-        if($('#webnic-modal-container')) {
-            $('#webnic-modal-container').removeAttr('class').addClass(buttonId);
-        }
-
-        if($('#etisalat-modal-container')) {
-            $('#etisalat-modal-container').removeAttr('class').addClass(buttonId);
-        }
-
-        if($('#startup-modal-container')) {
-            $('#startup-modal-container').removeAttr('class').addClass(buttonId);
-        }
-
+        projectModal.addClass('fold-up-modal');
+        
         $('body').addClass('modal-active');
     });
 
-    $('#melontoon-close-modal').click(function(){
-        $('#melontoon-modal-container').addClass('out');
+    $(projectCloseIcon).click(function(){
+        $(this).parents('.project-modal-container').addClass('out');
         $('body').removeClass('modal-active');
     });
 
-    $('#webnic-close-modal').click(function(){
-        $('#webnic-modal-container').addClass('out');
-        $('body').removeClass('modal-active');
-    });
-
-    $('#etisalat-close-modal').click(function(){
-        $('#etisalat-modal-container').addClass('out');
-        $('body').removeClass('modal-active');
-    });
-
-    $('#startup-close-modal').click(function(){
-        $('#startup-modal-container').addClass('out');
+    $('#past-project-close-modal').click(function(){
+        $('#past-project-modal-container').addClass('out');
         $('body').removeClass('modal-active');
     });
 
     // Init ScrollMagic
     $('[data-scrollmagic]').each(function (index, elem) {
         // Init ScrollMagic Controller
-        let controller = new ScrollMagic.Controller();
+        var controller = new ScrollMagic.Controller();
 
         // Create Animations
-        let upTitle = $(elem).find('h1.scrollmagic-upTitle'),
+        var upTitle = $(elem).find('h1.scrollmagic-upTitle'),
             leftSub = $(elem).find('h3.scrollmagic-leftSub'),
             rightSub = $(elem).find('h3.scrollmagic-rightSub'),
             upPara = $(elem).find('p.scrollmagic-upPara'),
@@ -99,7 +83,7 @@
             leftList = $(elem).find('ul.scrollmagic-leftList'),
             upBtn = $(elem).find('a.scrollmagic-upBtn');
 
-        let tl = new TimelineMax({pause: true});
+        var tl = new TimelineMax({pause: true});
         tl.add("start") // add timeline label
             .fromTo(upTitle, 0.4, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
             .fromTo(leftSub, 0.5, { x: '-60px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut }, "start")
@@ -117,7 +101,7 @@
             .fromTo(upBtn, 0.4, { y: '40px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, "start");
 
         // Create the Scene and trigger when visible
-        let scene = new ScrollMagic.Scene({
+        var scene = new ScrollMagic.Scene({
             triggerElement: elem,
             offset: -100 // offset the trigger number of px below scene's top
         })

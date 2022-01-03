@@ -505,28 +505,28 @@ img.vertical-divider {
 .recent-work-content .card .card-img .img-hover:hover {
     opacity: 1;
 }
-.startup-title {
+.past-project-title {
     color: #40404C;
     font-weight: 600;
     text-align: center;
 }
-.startup-content {
+.past-project-content {
     margin-top: 7rem;
     margin-bottom: 2rem;
 }
-.startup-content .card {
+.past-project-content .card {
     border: none;
 }
-.startup-content .card .card-img {
+.past-project-content .card .card-img {
     cursor: pointer;
 }
-.startup-content .card .card-img > img {
+.past-project-content .card .card-img > img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-.startup-content .card .card-img .overlay {
+.past-project-content .card .card-img .overlay {
     background-color: #40404C;
     position: absolute;
     top: 0;
@@ -539,27 +539,27 @@ img.vertical-divider {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.startup-content .card .card-img:hover .overlay {
+.past-project-content .card .card-img:hover .overlay {
     opacity: 0.9;
 }
-.startup-content .overlay h1 {
+.past-project-content .overlay h1 {
     color: #CBCBE5;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
-.startup-content .overlay p {
+.past-project-content .overlay p {
     color: #CBCBE5;
     width: 600px;
     margin: 0 auto 2rem auto;
 }
-.startup-content .overlay a {
+.past-project-content .overlay a {
     margin-top: 1rem;
 }
-.startup-content .overlay a .btn-link-fx {
+.past-project-content .overlay a .btn-link-fx {
     font-size: 1.5rem;
     color: #CBCBE5;
 }
-.startup-content .overlay a .btn-link-fx:before {
+.past-project-content .overlay a .btn-link-fx:before {
     background-color: #CBCBE5;
 }
 /*
@@ -615,7 +615,7 @@ body.modal-active {
     overflow: hidden;
 }
 /* Melontoon Modal */
-#melontoon-modal-container {
+.project-modal-container {
     position: fixed;
     display: table;
     height: 100%;
@@ -625,108 +625,108 @@ body.modal-active {
     transform: scale(0);
     z-index: 1000;
 }
-#melontoon-modal-container.fold-up-modal-two {
+.project-modal-container.fold-up-modal {
     transform: scaleY(0.01) scaleX(0);
     animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#melontoon-modal-container.fold-up-modal-two .modal-background .modal {
+.project-modal-container.fold-up-modal .modal-background .modal {
     transform: scale(0);
     animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#melontoon-modal-container.fold-up-modal-two.out {
+.project-modal-container.fold-up-modal.out {
     transform: scale(1);
     animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#melontoon-modal-container .modal-background {
+.project-modal-container .modal-background {
     display: table-cell;
     background-color: #fff;
     text-align: center;
     vertical-align: middle;
 }
-#melontoon-modal-container .modal-background .modal {
+.project-modal-container .modal-background .modal {
     background-color: #fff;
     display: block;
     overflow-y: scroll !important;
 }
-#melontoon-modal-container .bg-img {
+.project-modal-container .bg-img {
     background-attachment: fixed;
     background-position: center -8rem;
     height: 88vh;
 }
-#melontoon-modal-container .modal-content {
+.project-modal-container .modal-content {
     position: relative;
     border-radius: 0;
     border: none;
-    background-color: #fff;
+    background-color: #f8f0f0;
     padding: 6rem 0;
 }
-#melontoon-modal-container .modal-content .text-container {
+.project-modal-container .modal-content .text-container {
     width: 600px;
     display: block;
     margin: 0 auto;
 }
-#melontoon-modal-container .nav-img-link {
+.project-modal-container .nav-img-link {
     position: fixed;
     right: 2rem;
     margin-top: -4rem !important;
     cursor: pointer;
 }
-#melontoon-modal-container .nav-img-link .img-link {
+.project-modal-container .nav-img-link .img-link {
     width: 30px;
     height: auto;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-#melontoon-modal-container .nav-img-link:hover .img-link {
+.project-modal-container .nav-img-link:hover .img-link {
     opacity: 0.8;
 }
-#melontoon-modal-container .modal-content ul {
+.project-modal-container .modal-content ul {
     text-align: left;
     padding-left: 0;
     margin: 5rem auto
 }
-#melontoon-modal-container .modal-content ul li {
+.project-modal-container .modal-content ul li {
     list-style: none;
     color: #40404C;
     font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
-#melontoon-modal-container .modal-content ul li > .hashtag {
+.project-modal-container .modal-content ul li > .hashtag {
     width: 20px;
     height: auto;
     margin-right: 1rem;
 }
-#melontoon-modal-container .modal-content h5 {
+.project-modal-container .modal-content h5 {
     line-height: 1.5;
     text-align: left;
 }
-#melontoon-modal-container a {
+.project-modal-container a {
     margin-top: 4rem;
 }
-#melontoon-modal-container a .btn-link-fx {
+.project-modal-container a .btn-link-fx {
     font-size: 1.25rem;
     color: #40404C;
 }
-#melontoon-modal-container a .btn-link-fx:before {
+.project-modal-container a .btn-link-fx:before {
     background-color: #40404C;
 }
-#melontoon-modal-container .modal-content .section-squigly-dark-divider {
+.project-modal-container .modal-content .section-squigly-dark-divider {
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
-#melontoon-modal-container .modal-content .img-thumb {
+.project-modal-container .modal-content .img-thumb {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 5rem auto;
 }
-#melontoon-modal-container .modal-content .img-thumb:last-child {
+.project-modal-container .modal-content .img-thumb:last-child {
     margin-top: 5rem;
     margin-bottom: 0;
 }
 /* Startup Modal */
-#startup-modal-container {
+.past-project-modal-container {
     position: fixed;
     display: table;
     height: 100%;
@@ -736,346 +736,108 @@ body.modal-active {
     transform: scale(0);
     z-index: 1000;
 }
-#startup-modal-container.fold-up-modal {
+.past-project-modal-container.fold-up-modal {
     transform: scaleY(0.01) scaleX(0);
     animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#startup-modal-container.fold-up-modal .modal-background .modal {
+.past-project-modal-container.fold-up-modal .modal-background .modal {
     transform: scale(0);
     animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#startup-modal-container.fold-up-modal.out {
+.past-project-modal-container.fold-up-modal.out {
     transform: scale(1);
     animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#startup-modal-container .modal-background {
+.past-project-modal-container .modal-background {
     display: table-cell;
     background-color: #40404C;
     text-align: center;
     vertical-align: middle;
 }
-#startup-modal-container .modal-background .modal {
+.past-project-modal-container .modal-background .modal {
     background-color: #fff;
     display: block;
     overflow-y: scroll !important;
 }
-#startup-modal-container .bg-img {
+.past-project-modal-container .bg-img {
     background-attachment: fixed;
     background-position: center -3.5rem;
     height: 88vh;
 }
-#startup-modal-container .modal-content {
+.past-project-modal-container .modal-content {
     position: relative;
     border-radius: 0;
     border: none;
     background-color: #40404C;
     padding: 6rem 0;
 }
-#startup-modal-container .modal-content .text-container {
+.past-project-modal-container .modal-content .text-container {
     width: 600px;
     display: block;
     margin: 0 auto;
 }
-#startup-modal-container .nav-img-link {
+.past-project-modal-container .nav-img-link {
     position: fixed;
     right: 2rem;
     margin-top: -4rem !important;
     cursor: pointer;
 }
-#startup-modal-container .nav-img-link .img-link {
+.past-project-modal-container .nav-img-link .img-link {
     width: 30px;
     height: auto;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-#startup-modal-container .nav-img-link:hover .img-link {
+.past-project-modal-container .nav-img-link:hover .img-link {
     opacity: 0.8;
 }
-#startup-modal-container .modal-content h2 {
+.past-project-modal-container .modal-content h2 {
     color: #CBCBE5;
 }
-#startup-modal-container .modal-content ul {
+.past-project-modal-container .modal-content ul {
     text-align: left;
     padding-left: 0;
     margin: 5rem auto
 }
-#startup-modal-container .modal-content ul li {
+.past-project-modal-container .modal-content ul li {
     list-style: none;
     color: #CBCBE5;
     font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
-#startup-modal-container .modal-content ul li > .hashtag {
+.past-project-modal-container .modal-content ul li > .hashtag {
     width: 20px;
     height: auto;
     margin-right: 1rem;
 }
-#startup-modal-container .modal-content h5 {
+.past-project-modal-container .modal-content h5 {
     color: #CBCBE5;
     line-height: 1.5;
     text-align: left;
 }
-#startup-modal-container a {
+.past-project-modal-container a {
     margin-top: 4rem;
 }
-#startup-modal-container a .btn-link-fx {
+.past-project-modal-container a .btn-link-fx {
     font-size: 1.25rem;
     color: #CBCBE5;
 }
-#startup-modal-container a .btn-link-fx:before {
+.past-project-modal-container a .btn-link-fx:before {
     background-color: #CBCBE5;
 }
-#startup-modal-container .modal-content .section-squigly-divider {
+.past-project-modal-container .modal-content .section-squigly-divider {
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
-#startup-modal-container .modal-content .img-thumb {
+.past-project-modal-container .modal-content .img-thumb {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-#startup-modal-container .modal-content .img-thumb:last-child {
+.past-project-modal-container .modal-content .img-thumb:last-child {
     margin-top: 5rem;
-}
-/* Webnic Modal */
-#webnic-modal-container {
-    position: fixed;
-    display: table;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    z-index: 1000;
-}
-#webnic-modal-container.fold-up-modal-three {
-    transform: scaleY(0.01) scaleX(0);
-    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#webnic-modal-container.fold-up-modal-three .modal-background .modal {
-    transform: scale(0);
-    animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#webnic-modal-container.fold-up-modal-three.out {
-    transform: scale(1);
-    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#webnic-modal-container .modal-background {
-    display: table-cell;
-    background-color: #40404C;
-    text-align: center;
-    vertical-align: middle;
-}
-#webnic-modal-container .modal-background .modal {
-    background-color: #fff;
-    display: block;
-    overflow-y: scroll !important;
-}
-#webnic-modal-container .bg-img {
-    background-attachment: fixed;
-    background-position: center -9rem;
-    height: 88vh;
-}
-#webnic-modal-container .modal-content {
-    position: relative;
-    border-radius: 0;
-    border: none;
-    background-color: #40404C;
-    padding: 6rem 0;
-}
-#webnic-modal-container .modal-content .text-container {
-    width: 600px;
-    display: block;
-    margin: 0 auto;
-}
-#webnic-modal-container .modal-content .section-squigly-divider {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-#webnic-modal-container .nav-img-link {
-    position: fixed;
-    right: 2rem;
-    margin-top: -4rem !important;
-    cursor: pointer;
-}
-#webnic-modal-container .nav-img-link .img-link {
-    width: 30px;
-    height: auto;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-#webnic-modal-container .nav-img-link:hover .img-link {
-    opacity: 0.8;
-}
-#webnic-modal-container .modal-content h2 {
-    color: #CBCBE5;
-}
-#webnic-modal-container .modal-content ul {
-    text-align: left;
-    padding-left: 0;
-    margin: 5rem auto
-}
-#webnic-modal-container .modal-content ul li {
-    list-style: none;
-    color: #CBCBE5;
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-#webnic-modal-container .modal-content ul li > .hashtag {
-    width: 20px;
-    height: auto;
-    margin-right: 1rem;
-}
-#webnic-modal-container .modal-content h5 {
-    color: #CBCBE5;
-    line-height: 1.5;
-    text-align: left;
-}
-#webnic-modal-container a {
-    margin-top: 4rem;
-}
-#webnic-modal-container a .btn-link-fx {
-    font-size: 1.25rem;
-    color: #CBCBE5;
-}
-#webnic-modal-container a .btn-link-fx:before {
-    background-color: #CBCBE5;
-}
-#webnic-modal-container .modal-content .section-squigly-divider {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-#webnic-modal-container .modal-content .img-thumb {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 5rem auto;
-}
-#webnic-modal-container .modal-content .img-thumb:last-child {
-    margin-top: 5rem;
-    margin-bottom: 0;
-}
-/* Etisalat Modal */
-#etisalat-modal-container {
-    position: fixed;
-    display: table;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    z-index: 1000;
-}
-#etisalat-modal-container.fold-up-modal-four {
-    transform: scaleY(0.01) scaleX(0);
-    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#etisalat-modal-container.fold-up-modal-four .modal-background .modal {
-    transform: scale(0);
-    animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#etisalat-modal-container.fold-up-modal-four.out {
-    transform: scale(1);
-    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-#etisalat-modal-container .modal-background {
-    display: table-cell;
-    background-color: #fff;
-    text-align: center;
-    vertical-align: middle;
-}
-#etisalat-modal-container .modal-background .modal {
-    background-color: #fff;
-    display: block;
-    overflow-y: scroll !important;
-}
-#etisalat-modal-container .bg-img {
-    background-attachment: fixed;
-    background-position: center -9rem;
-    height: 88vh;
-}
-#etisalat-modal-container .modal-content {
-    position: relative;
-    border-radius: 0;
-    border: none;
-    background-color: #fff;
-    padding: 6rem 0;
-}
-#etisalat-modal-container .modal-content .text-container {
-    width: 600px;
-    display: block;
-    margin: 0 auto;
-}
-#etisalat-modal-container .modal-content .section-squigly-dark-divider {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-#etisalat-modal-container .nav-img-link {
-    position: fixed;
-    right: 2rem;
-    margin-top: -4rem !important;
-    cursor: pointer;
-}
-#etisalat-modal-container .nav-img-link .img-link {
-    width: 30px;
-    height: auto;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-#etisalat-modal-container .nav-img-link:hover .img-link {
-    opacity: 0.8;
-}
-#etisalat-modal-container .modal-content h2 {
-    color: #40404C;
-}
-#etisalat-modal-container .modal-content ul {
-    text-align: left;
-    padding-left: 0;
-    margin: 5rem auto
-}
-#etisalat-modal-container .modal-content ul li {
-    list-style: none;
-    color: #40404C;
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-#etisalat-modal-container .modal-content ul li > .hashtag {
-    width: 20px;
-    height: auto;
-    margin-right: 1rem;
-}
-#etisalat-modal-container .modal-content h5 {
-    color: #40404C;
-    line-height: 1.5;
-    text-align: left;
-}
-#etisalat-modal-container a {
-    margin-top: 4rem;
-}
-#etisalat-modal-container a .btn-link-fx {
-    font-size: 1.25rem;
-    color: #40404C;
-}
-#etisalat-modal-container a .btn-link-fx:before {
-    background-color: #40404C;
-}
-#etisalat-modal-container .modal-content .section-squigly-divider {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-#etisalat-modal-container .modal-content .img-thumb {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 5rem auto;
-}
-#etisalat-modal-container .modal-content .img-thumb:last-child {
-    margin-top: 5rem;
-    margin-bottom: 0;
 }
 /*
  * Core: Footer Component

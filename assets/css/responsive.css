@@ -1,11 +1,3 @@
-@media screen and (max-width: 1300px) {
-    #melontoon-modal-container .bg-img,
-    #webnic-modal-container .bg-img,
-    #etisalat-modal-container .bg-img {
-        background-position: center 0;
-        height: 100vh;
-    }
-}
 @media screen and (max-width: 1200px) {
     #home-section img {
         width: 100%;
@@ -56,16 +48,16 @@
     #about-img-three {
         width: 300px;
     }
-    .startup-content .overlay h1 {
+    .past-project-content .overlay h1 {
         font-size: 1.75rem;
     }
-    .startup-content .overlay p {
+    .past-project-content .overlay p {
         width: 100%;
     }
-    .startup-content .overlay a .btn-link-fx {
+    .past-project-content .overlay a .btn-link-fx {
         font-size: 1.2rem;
     }
-    .startup-content .overlay .section-squigly-divider {
+    .past-project-content .overlay .section-squigly-divider {
         height: 30px;
     }
     .footer-left {
@@ -127,45 +119,45 @@
     #home-section .home-title {
         margin-top: 16rem;
     }
-    .startup-content .card .card-img .overlay {
+    .past-project-content .card .card-img .overlay {
         padding: 1.5rem;
     }
-    .startup-content .overlay h1 {
+    .past-project-content .overlay h1 {
         display: none;
     }
-    .startup-content .overlay p {
+    .past-project-content .overlay p {
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     }
-    .startup-content .overlay a {
+    .past-project-content .overlay a {
         margin-top: 0;
     }
-    .startup-content .overlay .section-squigly-divider {
+    .past-project-content .overlay .section-squigly-divider {
         background-size: 300px auto;
         height: 20px;
     }
-    #startup-modal-container .modal-content .text-container,
-    #melontoon-modal-container .modal-content .text-container,
-    #webnic-modal-container .modal-content .text-container,
-    #etisalat-modal-container .modal-content .text-container {
+    .past-project-modal-container .modal-content .text-container,
+    .project-modal-container .modal-content .text-container,
+    .project-modal-container .modal-content .text-container,
+    .project-modal-container .modal-content .text-container {
         width: 100%;
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    #startup-modal-container .modal-content ul,
-    #startup-modal-container .modal-content h5,
-    #melontoon-modal-container .modal-content ul,
-    #melontoon-modal-container .modal-content h5,
-    #webnic-modal-container .modal-content ul,
-    #webnic-modal-container .modal-content h5,
-    #etisalat-modal-container .modal-content ul,
-    #etisalat-modal-container .modal-content h5 {
+    .past-project-modal-container .modal-content ul,
+    .past-project-modal-container .modal-content h5,
+    .project-modal-container .modal-content ul,
+    .project-modal-container .modal-content h5,
+    .project-modal-container .modal-content ul,
+    .project-modal-container .modal-content h5,
+    .project-modal-container .modal-content ul,
+    .project-modal-container .modal-content h5 {
         text-align: center;
     }
-    #startup-modal-container .modal-content .img-thumb,
-    #melontoon-modal-container .modal-content .img-thumb,
-    #webnic-modal-container .modal-content .img-thumb,
-    #etisalat-modal-container .modal-content .img-thumb {
+    .past-project-modal-container .modal-content .img-thumb,
+    .project-modal-container .modal-content .img-thumb,
+    .project-modal-container .modal-content .img-thumb,
+    .project-modal-container .modal-content .img-thumb {
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -174,11 +166,11 @@
     }
 }
 @media screen and (max-width: 576px) {
-    .startup-content .overlay p,
-    .startup-content .overlay .section-squigly-divider {
+    .past-project-content .overlay p,
+    .past-project-content .overlay .section-squigly-divider {
         display: none;
     }
-    .startup-content .overlay a .btn-link-fx {
+    .past-project-content .overlay a .btn-link-fx {
         font-size: 1.5rem;
     }
 }
@@ -190,10 +182,10 @@
     #typed {
         border-bottom: 3px solid #40404C;
     }
-    #melontoon-modal-container .bg-img,
-    #startup-modal-container .bg-img,
-    #webnic-modal-container .bg-img,
-    #etisalat-modal-container .bg-img {
+    .project-modal-container .bg-img,
+    .past-project-modal-container .bg-img,
+    .project-modal-container .bg-img,
+    .project-modal-container .bg-img {
         display: none;
     }
     footer {

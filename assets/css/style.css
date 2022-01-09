@@ -8,7 +8,9 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
 
-html, body {}
+html, body {
+    overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -549,7 +551,7 @@ img.vertical-divider {
 }
 .past-project-content .overlay p {
     color: #CBCBE5;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto 2rem auto;
 }
 .past-project-content .overlay a {
@@ -649,8 +651,7 @@ body.modal-active {
     overflow-y: scroll !important;
 }
 .project-modal-container .bg-img {
-    background-attachment: fixed;
-    background-position: center -8rem;
+    background-position: center center;
     height: 88vh;
 }
 .project-modal-container .modal-content {
@@ -710,6 +711,11 @@ body.modal-active {
 }
 .project-modal-container a .btn-link-fx:before {
     background-color: #40404C;
+}
+.project-modal-container p.text-link-fx {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #40404C;
 }
 .project-modal-container .modal-content .section-squigly-dark-divider {
     margin-top: 3rem;

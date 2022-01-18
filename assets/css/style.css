@@ -717,6 +717,11 @@ body.modal-active {
     font-size: 1.25rem;
     color: #40404C;
 }
+.project-modal-container p.text-link-light-fx {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #CBCBE5;
+}
 .project-modal-container .modal-content .section-squigly-dark-divider {
     margin-top: 3rem;
     margin-bottom: 5rem;
